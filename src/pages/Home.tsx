@@ -1,5 +1,7 @@
+import MonthNavigation from "../components/MonthNavigation";
+
 function Home() {
-  return <div>홈페이지</div>;
+  return <MonthNavigation />;
 }
 
 export default Home;
