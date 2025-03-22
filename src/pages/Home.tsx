@@ -1,11 +1,11 @@
-import ExpenseList from "../components/ExpenseList";
+import CreateExpense from "../components/CreateExpense";
 import MonthNavigation from "../components/MonthNavigation";
 
 function Home() {
   return (
     <div>
       <MonthNavigation />
-      <ExpenseList />
+      <CreateExpense />
     </div>
   );
 }
