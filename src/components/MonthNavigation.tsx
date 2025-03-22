@@ -3,7 +3,7 @@ import MonthBox from "./components/MonthBox";
 
 function MonthNavigation() {
   return (
-    <ContainerBox mtNum="20">
+    <ContainerBox>
       <div className="flex justify-center">
         <MonthBox chldren="1월" />
         <MonthBox chldren="2월" />
