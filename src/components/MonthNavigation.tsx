@@ -1,8 +1,9 @@
+import ContainerBox from "./components/ContainerBox";
 import MonthBox from "./components/MonthBox";
 
 function MonthNavigation() {
   return (
-    <div className="bg-white p-5 rounded-md outline-blue-500 outline-2 mt-15">
+    <ContainerBox>
       <div className="flex justify-center">
         <MonthBox chldren="1월" />
         <MonthBox chldren="2월" />
@@ -19,7 +20,7 @@ function MonthNavigation() {
         <MonthBox chldren="11월" />
         <MonthBox chldren="12월" />
       </div>
-    </div>
+    </ContainerBox>
   );
 }
 
