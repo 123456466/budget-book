@@ -1,11 +1,11 @@
-import Button from "./components/Button";
+import { Button } from "./components/Button";
 import ContainerBox from "./components/ContainerBox";
 import FormInput from "./components/FormInput";
 
 function CreateExpense() {
   return (
     <ContainerBox>
-      <form className="flex justify-center">
+      <form className="flex justify-center items-center">
         <FormInput type="date" placeholder="" children="날짜" />
         <FormInput
           type="text"
