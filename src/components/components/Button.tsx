@@ -1,10 +1,14 @@
 interface ButtonProps {
   children: string;
+  onClick: any;
 }
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <button className="bg-blue-900/30 px-4 h-10 cursor-pointer rounded-sm text-blue-900 hover:bg-white  hover:outline-2 outline-blue-900">
+    <button
+      onClick={onClick}
+      className="bg-blue-900/30 px-4 h-10 cursor-pointer rounded-sm text-blue-900 hover:bg-white  hover:outline-2 outline-blue-900"
+    >
       {children}
     </button>
   );
