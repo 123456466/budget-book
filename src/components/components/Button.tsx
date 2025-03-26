@@ -14,9 +14,12 @@ export const Button = ({ children, onClick }: ButtonProps) => {
   );
 };
 
-export const DelButton = ({ children }: ButtonProps) => {
+export const DelButton = ({ children, onClick }: ButtonProps) => {
   return (
-    <button className="bg-red-800/40 px-4 h-10 cursor-pointer rounded-sm text-red-900 hover:bg-white  hover:outline-2 outline-red-900">
+    <button
+      onClick={onClick}
+      className="bg-red-800/40 px-4 h-10 cursor-pointer rounded-sm text-red-900 hover:bg-white  hover:outline-2 outline-red-900"
+    >
       {children}
     </button>
   );
