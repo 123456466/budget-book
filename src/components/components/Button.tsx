@@ -1,13 +1,26 @@
 interface ButtonProps {
   children: string;
+  onClick: any;
 }
 
-const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <button className="bg-blue-900/30 px-4 cursor-pointer rounded-sm text-blue-900 hover:bg-white  hover:outline-2 outline-blue-900">
+    <button
+      onClick={onClick}
+      className="bg-blue-900/30 px-4 h-10 cursor-pointer rounded-sm text-blue-900 hover:bg-white  hover:outline-2 outline-blue-900"
+    >
       {children}
     </button>
   );
 };
 
-export default Button;
+export const DelButton = ({ children, onClick }: ButtonProps) => {
+  return (
+    <button
+      onClick={onClick}
+      className="bg-red-800/40 px-4 h-10 cursor-pointer rounded-sm text-red-900 hover:bg-white  hover:outline-2 outline-red-900"
+    >
+      {children}
+    </button>
+  );
+};
